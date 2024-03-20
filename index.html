@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .row{
+            /* width: 90%; */
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+           
+        }
+        .row img{
+            width: 250px;
+           
+        }
+        @media screen and (max-width:320px){
+            .row img{
+                display: none;
+                width: 100%;
+            }
+            .row .one{
+                display: block;
+            }
+        }
+        @media screen and (min-width:321px) and (max-width:420px){
+            .row{
+                width: 220px;
+            }
+            .row img{
+                display: none;
+                width: 90%;
+            }
+            .row .two{
+                display: block;
+                
+            }
+        }
+        @media screen and (min-width:421px) and (max-width:768px){
+            
+            .row{
+                width: 220px;
+            }
+            .row img{
+                display: none;
+            }
+            .row .three{
+                display: block;
+            }
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="row">
+            <img src="./assets/v1.jpg" alt="" class="one two three">
+            <img src="./assets/v2.jpg" alt="" class="two three">
+            <img src="./assets/v3.jpg" alt="" class="three">
+            <img src="./assets/v4.jpg" alt="">
+            
+        </div>
+        <div class="row">
+            <img src="./assets/v5.jpg" alt="" class="two three">
+            <img src="./assets/v6.jpg" alt="" class="two three">
+            <img src="./assets/v7.jpg" alt="" class="three">
+            <img src="./assets/v8.jpg" alt="">
+            
+        </div>
+        <div class="row">
+            <img src="./assets/v9.jpg" alt="" class="three">
+            <img src="./assets/v10.jpg" alt="" class="three">
+            <img src="./assets/v11.jpg" alt="" class="three">
+            <img src="./assets/v1.jpg" alt="">
+            
+        </div>
+        <div class="row">
+            <img src="./assets/v13.jpg" alt="">
+            <img src="./assets/v6.jpg" alt="" class="">
+            <img src="./assets/v13.jpg" alt="">
+            <img src="./assets/v16.jpg" alt="">
+           
+        </div>
+    </div>
+</body>
+</html>
